@@ -143,10 +143,12 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 <!-- Screenshot placeholder: Password reset -->
 ![Password Reset](screenshots/delegate-control-helpdesk-group.png)
+
 ![Password Reset](screenshots/delegation-implemented.png)
-![Password Reset](screenshots/delegation-override.png)
 
+![Password Reset](domain-joined-screenshots/cohort-2026-student-password-changed-successfully-by-hekpdesk-tier2.png)
 
+![Password Reset](domain-joined-screenshots/helpdesk-tier2-cant-disable-account-lp.png)
 
 
 ### Password Reset Workflow
@@ -158,9 +160,13 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Correct workflow:  
   > "Helpdesk performs resets from domain-joined client using RSAT (ADUC), not from the DC."
 
-![Password Reset](screenshots/delegate-control-helpdesk-group.png)
-![Password Reset](screenshots/delegation-implemented.png)
-![Password Reset](screenshots/delegation-override.png)
+![Password Reset](domain-joined-screenshots/helpdesk-password-change-b4-logon.png)
+
+![Password Reset](domain-joined-screenshots/helpdesk-first-time-logon.png)
+
+![Password Reset](domain-joined-screenshots/helpdesk-password-changed-successfully.png)
+
+![Password Reset](domain-joined-screenshots/helpdesk-cant-logon-directly-to-DC.png)
 
 
 

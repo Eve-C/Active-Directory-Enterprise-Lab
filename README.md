@@ -1,4 +1,4 @@
-# CyberWomen Systems Architecture - Active Directory Identity & Access Management Lab
+# CyberWomen Systems Architecture - Active Directory Identity & Access Management Lab (IN PROGRESS)
 > Designing the Technical "Brain" for a Training & Mentorship Ecosystem
 
 ---
@@ -54,6 +54,11 @@ The AD lab acts as the organization’s **central "source of truth"**:
       - `GG-Cohort-2027`
       - `GG-Mentors`
       - `GG-Helpdesk-Tier2`
+    - `Staff`
+      - `Program-Management`
+      - `Training-Team`
+      - `Student-Services`
+      - `IT-Support`
   - `Cybersecurity-Programs` (Red-Team, Blue-Team, GRC - Created Manually)
     - `Red-Team`
     - `Blue-Team`
@@ -63,13 +68,13 @@ The AD lab acts as the organization’s **central "source of truth"**:
       - `GG-Red-Team`
       - `GG-GRC`
   - `Admin-Accounts` (Created Manually)
-    - `x`
-    - `y`
-    - `z`
+    - `Tier0`
+    - `Tier1`
+    - `Tier2`
   - `Managed-Computers` (Created Manually)
-    - `a`
-    - `b`
-    - `c`
+    - `Student-Workstations`
+    - `Training-Lab-Servers`
+    - `Admin-Workstations`
     
     
 
@@ -226,7 +231,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
 This lab demonstrates **founder-level systems thinking**:
 
 - Solves a **real business problem**: managing cohorts, mentors, and resources efficiently  
-- Scalable design: can handle growth from 10 → 1000+ students  
+- Scalable design: can handle growth from 100 → 1000+ students  
 - Audit-ready: Logs, IDs, and group-based assignments ensure **traceability**  
 - Provides foundation for **training programs**, **resource management**, and **future mentorship platform**
 

@@ -74,7 +74,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
     
 
 <!-- Screenshot: OU structure diagram -->
-![OU Structure](screenshots/ou-structure.png)
+![OU Structure](screenshots/top-level-ous-creation.png)
 
 > **Note:** Manual creation was done to understand enterprise design before applying automation.
 

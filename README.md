@@ -1,4 +1,4 @@
-<⚠️ This project is actively being expanded. Current version reflects completed identity architecture, automation, policy configuration, and troubleshooting phases. Additional sections are being documented incrementally.
+⚠️ *This project is actively being expanded. Current version reflects completed identity architecture, automation, policy configuration, and troubleshooting phases. Additional sections are being documented incrementally.*
 
 ## CyberWomen Systems Architecture | Active Directory Identity & Access Management Lab
 > Designing the Technical "Brain" for a Training & Mentorship Ecosystem
@@ -123,7 +123,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
   - Logs all actions for audit and troubleshooting
 
 <!-- Screenshot: PowerShell automation log -->
-![Automation Log](screenshots/automation-log.png)
+![Automation Log](screenshots/adding-users-scripting.png)
 
 > Automation reduces manual work by **~95%**, simulating a realistic Day 1 cohort onboarding.
 

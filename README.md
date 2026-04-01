@@ -1,4 +1,6 @@
-# CyberWomen Systems Architecture - Active Directory Identity & Access Management Lab (IN PROGRESS)
+<⚠️ This project is actively being expanded. Current version reflects completed identity architecture, automation, policy configuration, and troubleshooting phases. Additional sections are being documented incrementally.
+
+## CyberWomen Systems Architecture | Active Directory Identity & Access Management Lab
 > Designing the Technical "Brain" for a Training & Mentorship Ecosystem
 
 ---

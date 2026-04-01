@@ -144,7 +144,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 <!-- Screenshot placeholder: Password reset -->
 ![Password Reset](screenshots/delegate-control-helpdesk-group.png)
 ![Password Reset](screenshots/delegation-implemented.png)
-![Password Reset](screenshots/delegation-implemented.png)
+![Password Reset](screenshots/delegation-override.png)
 
 
 
@@ -156,7 +156,11 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Security control observed:  
   > "Interactive sign-in to the Domain Controller blocked for helpdesk account, consistent with Tiered Admin Model."  
 - Correct workflow:  
-  > "Helpdesk performs resets from domain-joined client using RSAT (ADUC), not from the DC."  
+  > "Helpdesk performs resets from domain-joined client using RSAT (ADUC), not from the DC."
+
+![Password Reset](screenshots/delegate-control-helpdesk-group.png)
+![Password Reset](screenshots/delegation-implemented.png)
+![Password Reset](screenshots/delegation-override.png)
 
 
 

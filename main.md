@@ -57,9 +57,19 @@ This document provides a **step-by-step technical account** of building the **Cy
 5. Installed necessary **GPOs** to support password policies and delegation.  
 
 <!-- Screenshot placeholder: DC IP configuration -->
+
+![DC IP Configuration](screenshots/initial-install.png)
+
 ![DC IP Configuration](screenshots/static-IP.png)
 
 ![DC IP Configuration](screenshots/ad-in-done.png)
+
+
+>Note: Selected *Add a new forest*, as this was the first domain controller
+![DC IP Configuration](screenshots/deployment-ad.png)
+
+
+
 
 
 
@@ -75,6 +85,19 @@ This document provides a **step-by-step technical account** of building the **Cy
 6. Moved client object into **Managed Computers OU → Admin-Workstations**.  
 
 <!-- Screenshot placeholder: Domain join -->
+
+
+<NB: *To install Windows 11 Pro in a virtual machine, the firmware must be set to UEFI because it is a strict system requirement for Secure Boot and TPM 2.0 support.*
+![Domain Join](domain-joined-screenshots/helpdesk-installation.png)
+
+![Domain Join](domain-joined-screenshots/wWin11-Client-Installation.png)
+
+![Domain Join](domain-joined-screenshots/client-join-domain.png)
+
+![Domain Join](domain-joined-screenshots/client-join-dc-p2.png)
+
+![Domain Join](domain-joined-screenshots/client-joined-dc-successfully.png)
+
 ![Domain Join](screenshots/helpdesk-default-placement-Computers.png)
 
 ![Domain Join](screenshots/move-helpdesk-client-to-managedcomputers-ou.png)
@@ -116,7 +139,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 ### User and Group Creation
 
 - Users created manually:  
-  - Tariro Nesu, Mike Karl , `Rest@go2026` (Mentor), `Create@f2026` (Admin), Nyasha Wayne (helpdesk), `Farai@nesu2026` (IT Support)  
+  - Tariro Nesu, Mike Karl ,Nyasha Wayne (helpdesk), Melz Josh  
 - Groups created manually inside the **Groups OU** to enforce **RBAC**:  
   - Cohort groups (`GG-Cohort-2026`,`GG-Cohort-2027`)  
 
@@ -160,13 +183,13 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Correct workflow:  
   > "Helpdesk performs resets from domain-joined client using RSAT (ADUC), not from the DC."
 
-![Password Reset](domain-joined-screenshots/helpdesk-password-change-b4-logon.png)
+![Password Reset](screenshots/helpdesk-first-time-logon.png)
 
-![Password Reset](domain-joined-screenshots/helpdesk-first-time-logon.png)
+![Password Reset](screenshots/helpdesk-password-change-b4-logon.png)
 
-![Password Reset](domain-joined-screenshots/helpdesk-password-changed-successfully.png)
+![Password Reset](screenshots/helpdesk-password-changed-successfully.png)
 
-![Password Reset](domain-joined-screenshots/helpdesk-cant-logon-directly-to-DC.png)
+![Password Reset](screenshots/helpdesk-cant-logon-directly-to-DC.png)
 
 
 
@@ -175,10 +198,22 @@ This document provides a **step-by-step technical account** of building the **Cy
 ### Domain Join & RSAT Validation
 
 - Joined Windows 11 Pro client to domain.  
-- Installed **RSAT** for administrative tasks.  
+- Client Admin Installed **RSAT** for administrative tasks.  
 - Verified delegated permissions: helpdesk account can reset passwords but cannot perform unauthorized actions.  
 
 ---
+![Password Reset](domain-joined-screenshots/RSAT-ADDED.png)
+
+
+
+![Password Reset](domain-joined-screenshots/view-ADUC-from-helpdesk-client-tier2.png)
+
+
+
+
+
+
+
 
 ## Group Policy Administration
 
@@ -187,7 +222,16 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Minimum password length: 12 characters  
 - Complexity enforced  
 - Password history: 24 remembered passwords  
-- GPO applied to Students OU
+- GPO applied to all objects
+
+
+![GPO Policies](password-settings-before.png)
+
+![GPO Policies](screenshots/changed-password-policies-successfully.png)
+
+![GPO Policies](screenshots/3-character-password-unsuccessful.png)
+
+
 
 ### Account Lockout Policies
 
@@ -196,7 +240,28 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Tested lockout → Helpdesk successfully reset password and unlocked account  
 
 <!-- Screenshot placeholder: GPO enforcement -->
-![GPO Policies](screenshots/gpo-password-policy.png)
+![GPO Policies](screenshots/account-lockout-policy-before-changes.png)
+![GPO Policies](screenshots/account-lockout-policy-changed.png)
+
+#Domain-Joined Windows 11 Pro Client -Mike Karl (student) logon
+![GPO Policies](domain-joined-screenshots/mike-2027-cohort-chnage-pzass.png)
+
+![GPO Policies](domain-joined-screenshots/account-locked-out-after-5-attempts.png)
+
+#Domain-Joined Windows 11 Pro Client -Helpdesk logon to unlock account (Nyasha Wayne)
+#change helpdesk delegation in Domain Controller to unlock the account
+![GPO Policies](screenshoots/wayne-helpdesk-tier2-delegation-ovveride.png)
+
+![GPO Policies](domain-joined-screenshots/account-unlockeddd.png)
+
+
+#Domain-Joined Windows 11 Pro Client -Mike Karl account unlocked
+![GPO Policies](domain-joined-screenshots/acc-unlocked-chnage-password-before-logon.png)
+
+![GPO Policies](domain-joined-screenshots/successful-logon-after-unlocked.png)
+
+
+
 
 ---
 

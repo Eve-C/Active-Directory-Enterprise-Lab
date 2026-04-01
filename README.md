@@ -1,4 +1,4 @@
-# CyberWomen Systems Architecture
+# CyberWomen Systems Architecture - Active Directory Identity & Access Management Lab
 > Designing the Technical "Brain" for a Training & Mentorship Ecosystem
 
 ---
@@ -43,22 +43,40 @@ The AD lab acts as the organization’s **central "source of truth"**:
 ### Identity Segregation (OUs)
 
 - Hierarchical OU design for **student lifecycle management**:
-  - `CyberWomen-Users`
+  - `CyberWomen-Users` (Created Manually)
     - `Students`
       - `Cohort-2026`
       - `Cohort-2027`
       - `Alumni`
     - `Groups`
-  - `Cybersecurity-Programs`
-    - `Groups` *(manually created)*
-      - `GG-Blue-Team` *(manual creation)*
-      - `GG-Red-Team` *(manual creation)*
-      - `GG-GRC` *(manual creation)*
+      - `GG-Students_All`
+      - `GG-Cohort-2026`
+      - `GG-Cohort-2027`
+      - `GG-Mentors`
+      - `GG-Helpdesk-Tier2`
+  - `Cybersecurity-Programs` (Red-Team, Blue-Team, GRC - Created Manually)
+    - `Red-Team`
+    - `Blue-Team`
+    - `GRC`
+    - `Groups`
+      - `GG-Blue-Team` 
+      - `GG-Red-Team`
+      - `GG-GRC`
+  - `Admin-Accounts` (Created Manually)
+    - `x`
+    - `y`
+    - `z`
+  - `Managed-Computers` (Created Manually)
+    - `a`
+    - `b`
+    - `c`
+    
+    
 
 <!-- Screenshot: OU structure diagram -->
 ![OU Structure](screenshots/ou-structure.png)
 
-> **Note:** The `Cybersecurity-Programs` Groups OU and its track groups were manually created to understand enterprise design before applying automation.
+> **Note:** Manual creation was done to understand enterprise design before applying automation.
 
 ---
 
@@ -91,7 +109,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
   - Logs actions with timestamps
 
 - **Script B**: Bulk student onboarding
-  - Reads CSV file for 100+ students
+  - Reads CSV file for 100 students
   - Creates cohort OUs if missing
   - Creates user accounts with secure, temporary passwords
   - Assigns users to cohort and program track groups
@@ -106,22 +124,59 @@ The AD lab acts as the organization’s **central "source of truth"**:
 
 ## Technologies & Tools
 
-- **Directory Services**: Windows Server 2022 (ADDS, DNS, DHCP)  
-- **Management Layer**: RSAT (Remote Server Administration Tools) on Windows Client  
-- **Automation Engine**: PowerShell (Splatting, CSV ingestion, logging)  
-- **Hypervisor**: Oracle VM VirtualBox (with Shared Folders & Guest Additions)
+- **Directory Services:** Windows Server 2022 (AD DS, DNS)
+- **Management Layer:** RSAT (Remote Server Administration Tools) on Windows 11 Pro domain-joined Client
+- **Automation Engine:** PowerShell (CSV ingestion, data normalization, username standardization, logging, bulk provisioning)
+- **Hypervisor:** Oracle VM VirtualBox (Shared Folders, Guest Additions, Snapshots)
+- **Network Configuration:** Static IPv4 addressing for domain stability
 
 ---
 
 ## Core Skills Demonstrated
 
-- **Systems Architecture**: Designing an AD structure that reflects real-world business workflows  
-- **Identity & Access Management**: Cohort-based and program-based RBAC  
-- **Automation**: Bulk onboarding with CSV + PowerShell  
-- **Operational Security**: Time synchronization, tiered admin model, least-privilege delegation  
-- **Troubleshooting**: VirtualBox boot errors, DNS resolution, Kerberos time drift, RSAT feature fixes
+- **Systems Architecture:** Designed a hierarchical Active Directory structure aligned to a future training organization, separating cohorts, users, groups,domain-joined clients and cybersecurity program tracks into scalable Organizational Units (OUs).
 
----
+- **Organizational Unit (OU) Design:** Created structured OUs manually to understand directory design before introducing automation, including student cohorts, user containers, and cybersecurity specialization groups.
+
+- **Identity & Access Management (IAM):** Implemented group-based access control using security groups for cohort membership and specialization tracks (Blue-Team, Red-Team, GRC), demonstrating practical Role-Based Access Control (RBAC).
+
+- **Manual Identity Provisioning:** Performed manual creation of users, groups, and memberships to understand foundational directory administration before scaling through automation.
+
+- **Bulk User Provisioning:** Automated student onboarding through CSV-driven account creation, cohort assignment, password initialization, and group membership allocation.
+
+- **PowerShell Automation:** Built repeatable provisioning workflows using PowerShell for OU creation, security group creation, and bulk account deployment.
+
+- **Data Normalization:** Processed onboarding datasets by cleaning CSV records, standardizing usernames, enforcing naming consistency, trimming formatting issues, and preparing records for Active Directory compatibility.
+
+- **Administrative Logging:** Implemented PowerShell logging to capture provisioning actions, timestamps, successful account creation, and execution feedback for traceability and troubleshooting.
+
+- **Group Policy Administration (GPO):** Configured password policies and account policies including password complexity, minimum password length, lockout thresholds, password history, and account lockout duration.
+
+- **Password Policy Security:** Tested and observed password policy behavior to understand how domain password enforcement affects user authentication and account protection.
+
+- **Delegated Administration:** Applied least-privilege principles by separating helpdesk permissions from domain administrative privileges.
+
+- **Account Management:** Performed password resets, account unlock operations, and permission verification within delegated administration boundaries.
+
+- **Domain Controller Network Configuration:** Configured static IPv4 addressing to ensure reliable DNS resolution and stable domain services.
+
+- **DNS Administration:** Verified name resolution, configured DNS dependencies, and resolved internal/external DNS behavior required for domain operations.
+
+- **Connectivity Testing:** Used ping and related network checks to validate host communication between domain controller and client systems.
+
+- **Domain Join Operations:** Joined a Windows 11 Pro client to the domain and validated domain authentication workflows.
+
+- **Remote Administration:** Managed the environment from a Windows 11 Pro domain-joined client using RSAT administrative consoles.
+
+- **Virtualization Operations:** Managed Oracle VM VirtualBox environment including snapshots, shared folders, Guest Additions installation, and VM boot configuration.
+
+- **Shared Folder Configuration:** Configured file transfer between host and guest systems to support scripts, CSV imports, logs, and documentation workflow.
+
+- **Authentication Reliability:** Resolved Kerberos-related time drift issues through clock synchronization to maintain secure domain authentication.
+
+- **Infrastructure Troubleshooting:** Resolved VirtualBox boot errors, RSAT installation failures, DNS issues, feature installation blockers, and permissions conflicts.
+
+- **Operational Documentation:** Produced technical documentation for architecture, automation workflow, troubleshooting records, and future scalability planning.
 
 ## Troubleshooting & Lab Notes
 

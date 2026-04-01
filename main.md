@@ -50,7 +50,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ### Domain Controller Setup
 
-1. Installed **Windows Server 2022** as the Domain Controller (DC).  
+1. Installed **Windows Server 2022** as the Domain Controller (WDC - corp.womenincyber.org).  
 2. Promoted the server to **Active Directory Domain Services (AD DS)**.  
 3. Configured **DNS** for domain resolution.  
 4. Set a **static IP address** for domain stability (e.g., `10.0.2.11`).  
@@ -69,7 +69,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 ![DC IP Configuration](screenshots/deployment-ad.png)
 
 
-
+![DC IP Configuration](screenshots/deployment-ad.png)
 
 
 

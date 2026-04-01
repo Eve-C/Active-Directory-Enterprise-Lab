@@ -89,7 +89,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
 > RBAC ensures students only access relevant learning materials while keeping sensitive resources secure.
 
 <!-- Screenshot: Group membership example -->
-![Group Assignment](screenshots/group-membership.png)
+![Group Assignment](screenshots/Group-Creation.png)
 
 ---
 

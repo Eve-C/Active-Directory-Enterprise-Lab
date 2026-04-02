@@ -81,6 +81,8 @@ The AD lab acts as the organization’s **central "source of truth"**:
     
 
 <!-- Screenshot: OU structure diagram -->
+![OU Structure](screenshots/corp-admin.png)
+
 ![OU Structure](screenshots/top-level-ous-creation.png)
 
 > **Note:** Manual creation was done to understand enterprise design before applying automation.
@@ -90,7 +92,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
 ### Role-Based Access Control (RBAC)
 
 - Security groups act as **keys for access to resources**:
-  - Cohort groups: `GG-Cohort-2026`, `GG-Cohort-2027`
+  - Cohort groups: `GG-Cohort-2026`, `GG-Cohort-2027`, `GG_Helpdesk_Tier2`, `GG_Mentors_All`, `GG_Students_All`
   - Program tracks: `GG-Blue-Team`, `GG-Red-Team`, `GG-GRC`
 
 > RBAC ensures students only access relevant learning materials while keeping sensitive resources secure.
@@ -123,6 +125,10 @@ The AD lab acts as the organization’s **central "source of truth"**:
   - Logs all actions for audit and troubleshooting
 
 <!-- Screenshot: PowerShell automation log -->
+![Automation Log](screenshots/excel1.png)
+
+![Automation Log](screenshots/excel2.png)
+
 ![Automation Log](screenshots/adding-users-scripting.png)
 
 > Automation reduces manual work by **~95%**, simulating a realistic Day 1 cohort onboarding.

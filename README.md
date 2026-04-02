@@ -131,6 +131,9 @@ The AD lab acts as the organization’s **central "source of truth"**:
 
 ![Automation Log](screenshots/adding-users-scripting.png)
 
+![Automation Log](screenshots/Cohort-2026-Scripting.png)
+
+
 > Automation reduces manual work by **~95%**, simulating a realistic Day 1 cohort onboarding.
 
 ---

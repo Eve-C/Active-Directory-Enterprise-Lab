@@ -64,6 +64,8 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ![DC IP Configuration](screenshots/ad-in-done.png)
 
+![DC IP Configuration](screenshots/corp-admin.png)
+
 
 >Note: Selected *Add a new forest*, as this was the first domain controller
 ![DC IP Configuration](screenshots/deployment-ad.png)

@@ -271,12 +271,18 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ### Script A: OU and Group Creation
 
-- Automated creation of **Cybersecurity-Programs OUs** and **security groups**.  
-- Issue observed: Some groups created in default `Users` container due to missing `-GroupScope`/`-GroupCategory` parameters.  
+- Automated creation of **Cybersecurity-Programs Groups OU** and **security groups**.  
+- Issue observed: All groups were created in default `Users` container due to missing `-GroupScope`/`-GroupCategory` parameters.  
 - Fix: Moved manually into the correct OU.
 
 <!-- Screenshot placeholder: Script A log -->
-![Script A Log](screenshots/script-a-log.png)
+![Script A Log](screenshots/track-groups-created-inside-users-container-instead.png)
+
+![Script A Log](screenshots/move-track-groups.png)
+
+![Script A Log](screenshots/track-groups-moved.png)
+
+
 
 ---
 

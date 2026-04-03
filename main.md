@@ -70,8 +70,8 @@ This document provides a **step-by-step technical account** of building the **Cy
 >Note: Selected *Add a new forest*, as this was the first domain controller
 ![DC IP Configuration](screenshots/deployment-ad.png)
 
+![DC IP Configuration](screenshots/domain.png)
 
-![DC IP Configuration](screenshots/deployment-ad.png)
 
 
 

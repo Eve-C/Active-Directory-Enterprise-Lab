@@ -276,11 +276,17 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Fix: Moved manually into the correct OU.
 
 <!-- Screenshot placeholder: Script A log -->
+![Script A Log](screenshots/groups-auto.png)
+
 ![Script A Log](screenshots/track-groups-created-inside-users-container-instead.png)
 
 ![Script A Log](screenshots/move-track-groups.png)
 
 ![Script A Log](screenshots/track-groups-moved.png)
+
+![Script A Log](screenshots/script-log.png)
+
+
 
 
 

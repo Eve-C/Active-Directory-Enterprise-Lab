@@ -278,7 +278,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 <!-- Screenshot placeholder: Script A log -->
 ![Script Groups OU & Security Groups Creation](scripts/groups-ou-creation.ps1)
 
-![Script A Log](screenshots/before-cybersecurity-prograns-groups-creation)
+![Script A Log](screenshots/before-cybersecurity-prograns-groups-creation.png)
 
 ![Script A Log](screenshots/automation-successfull-groups-ou-created-successfully.png)
 
@@ -292,7 +292,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ![Script A Log](screenshots/script-log.png)
 
-![Script A Log](scripts/AD_Structure_Setup.log)
+![Script Groups OU & Security Groups Creation](scripts/AD_Structure_Setup.log)
 
 
 
@@ -306,9 +306,9 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Assigned users to cohort and program track groups.  
 - Logging enabled for **audit and troubleshooting**.
 
-![Script A Log](scripts/corp_students_100.csv)
+![Students' CSV File](scripts/corp_students_100.csv)
 
-![Script A Log](scripts/users-creation-script.ps1)
+![Script User Provisioning](scripts/user-creation-script.ps1)
 
 ![Script A Log](screenshots/co-2026-b4-automation.png)
 
@@ -382,13 +382,4 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ---
 
-## Screenshots
 
-- OU Structure: `top-level-ous-creation.png`  
-- Group Creation: `group-creation.png`  
-- Password Reset: `password-reset.png`  
-- Domain Join: `domain-join.png`  
-- GPO Enforcement: `gpo-password-policy.png`  
-- Script Logs: `script-a-log.png`  
-- Shared Folder: `shared-folder.png`  
-- Post-Deployment Audit: `post-deployment-audit.png`  

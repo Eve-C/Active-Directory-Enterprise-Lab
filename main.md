@@ -271,11 +271,17 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ### Script A: OU and Group Creation
 
-- Automated creation of **Cybersecurity-Programs Groups OU** and **security groups**.  
+- Automated creation of **Cybersecurity-Programs OU's ------>( Groups OU** and **security groups** (GG-Red-Team, GG-Blue-Team, GG-GRC).  
 - Issue observed: All groups were created in default `Users` container due to missing `-GroupScope`/`-GroupCategory` parameters.  
 - Fix: Moved manually into the correct OU.
 
 <!-- Screenshot placeholder: Script A log -->
+![Script Groups OU & Security Groups Creation](scripts/groups-ou-creation.ps1)
+
+![Script A Log](screenshots/before-cybersecurity-prograns-groups-creation)
+
+![Script A Log](screenshots/automation-successfull-groups-ou-created-successfully.png)
+
 ![Script A Log](screenshots/groups-auto.png)
 
 ![Script A Log](screenshots/track-groups-created-inside-users-container-instead.png)
@@ -286,6 +292,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ![Script A Log](screenshots/script-log.png)
 
+![Script A Log](scripts/AD_Structure_Setup.log)
 
 
 
@@ -295,9 +302,44 @@ This document provides a **step-by-step technical account** of building the **Cy
 ### Script B: Bulk User Provisioning
 
 - Imported **CSV file** for 100 students.  
-- Created users in **Cohort OUs**.  
+- Created users in **Cohort OUs** 50 in each of the cohorts (Cohort-2026 & Cohort-2027).  
 - Assigned users to cohort and program track groups.  
-- Logging enabled for **audit and troubleshooting**.  
+- Logging enabled for **audit and troubleshooting**.
+
+![Script A Log](scripts/corp_students_100.csv)
+
+![Script A Log](scripts/users-creation-script.ps1)
+
+![Script A Log](screenshots/co-2026-b4-automation.png)
+
+![Script A Log](screenshots/Cohort-2026-Scripting.png)
+
+![Script Users Creation](screenshots/GG-Cohort-2026-before-automation.png)
+
+![Script Users Creation](screenshots/GG-Cohort-2026-Scripting.png)
+
+![Script A Log](screenshots/co-2027-b4-automation.png)
+
+![Script A Log](screenshots/Cohort-2027-Scripting.png)
+
+![Script Users Creation](screenshots/gg-cohort-2027-b4-automation.png)
+
+![Script Users Creation](screenshots/GG-Cohort-2027-Scripting.png)
+
+![Script Users Creation](screenshots/gg-grc-b4-auto.png)
+
+![Script Users Creation](screenshots/gg-grc-after-aut0-att1.png)
+
+![Script Users Creation](screenshots/gg-blue-team-b4-auto.png)
+
+![Script Users Creation](screenshots/gg-blue-team-script.png)
+
+![Script Users Creation](screenshots/gg-red-team-b4-auto.png)
+
+![Script Users Creation](screenshots/gg-red-team-script.png)
+
+![Script Users Creation](screenshots/User-Creation-Copy.log)
+
 
 ---
 
@@ -316,7 +358,8 @@ This document provides a **step-by-step technical account** of building the **Cy
 - Auto-mounted on VM boot, ensuring repeatable, scalable onboarding.
 
 <!-- Screenshot placeholder: Shared folder -->
-![Shared Folder](screenshots/shared-folder.png)
+![Shared Folder](screenshots/shared-folder-conf.png)
+
 
 ---
 
@@ -328,7 +371,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 - All automated tasks confirmed successful.
 
 <!-- Screenshot placeholder: Audit log -->
-![Audit Log](screenshots/post-deployment-audit.png)
+![Audit Log](screenshots/success-automation-confirmation.png)
 
 ---
 

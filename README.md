@@ -1,4 +1,4 @@
-⚠️ *This project is actively being expanded. Current version reflects completed identity architecture, automation, policy configuration, and troubleshooting phases. Additional sections are being documented incrementally.*
+⚠️*This project is actively being expanded. Current version reflects completed identity architecture, automation, policy configuration, and troubleshooting phases. Additional sections are being documented incrementally.*
 
 ## CyberWomen Systems Architecture | Active Directory Identity & Access Management Lab
 > Designing the Technical "Brain" for a Training & Mentorship Ecosystem
@@ -146,6 +146,8 @@ The AD lab acts as the organization’s **central "source of truth"**:
 - **Hypervisor:** Oracle VM VirtualBox (Shared Folders, Guest Additions, Snapshots)
 - **Network Configuration:** Static IPv4 addressing for domain stability
 
+![RSAT DNS Fix](screenshots/vm.png)
+
 ---
 
 ## Core Skills Demonstrated
@@ -198,12 +200,12 @@ The AD lab acts as the organization’s **central "source of truth"**:
 
 ### VirtualBox Boot Priority
 
-- Issue: VM failed with ROM/DDM error  
+- Issue: VM failed with ROM/DDIM error  
 - Fix: Hard Disk moved to top of boot order; Network boot disabled  
 - Lesson: Correct boot order ensures VM boots directly from installed OS
 
 <!-- Screenshot: VM boot settings -->
-![VM Boot Priority](screenshots/vm-boot.png)
+![VM Boot Priority](screenshots/stuck.png)
 
 ---
 
@@ -214,7 +216,7 @@ The AD lab acts as the organization’s **central "source of truth"**:
 - Lesson: Kerberos requires accurate time to prevent replay attacks
 
 <!-- Screenshot: NTP sync configuration -->
-![Kerberos Time Sync](screenshots/kerberos-sync.png)
+![Kerberos Time Sync](screenshots/time-sync-troubleshooting.png)
 
 ---
 

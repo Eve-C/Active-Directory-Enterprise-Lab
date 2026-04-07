@@ -1,0 +1,28 @@
+2026-03-27 12:51:31 - Groups OU created successfully
+2026-03-27 12:53:47 - Groups OU already exists
+2026-03-27 13:25:11 - ERROR: failed to create GG-Blue-Team. The term '-GroupCategory' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+2026-03-27 13:25:11 - ERROR: failed to create GG-Red-Team. The term '-GroupCategory' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+2026-03-27 13:25:11 - ERROR: failed to create GG-GRC. The term '-GroupCategory' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+2026-03-27 13:25:11 -  Active-Directory Structure Setup script completed successfully
+2026-03-27 13:29:20 - Group already exists
+2026-03-27 13:29:20 - Group already exists
+2026-03-27 13:29:20 - Group already exists
+2026-03-27 13:29:20 -  Active-Directory Structure Setup script completed successfully
+2026-03-27 13:33:48 - Group already exists
+2026-03-27 13:33:48 - Group already exists
+2026-03-27 13:33:48 - Group already exists
+2026-03-27 13:33:48 -  Active-Directory Structure Setup script completed successfully
+2026-03-27 13:44:29 - Group already exists
+2026-03-27 13:44:32 - Group already exists
+2026-03-27 13:44:32 - Group already exists
+2026-03-27 13:44:32 -  Active-Directory Structure Setup script completed successfully
+2026-04-02 21:47:05 - Groups OU already exists
+2026-04-02 21:47:06 - Group already exists
+2026-04-02 21:47:06 - Group already exists
+2026-04-02 21:47:06 - Group already exists
+2026-04-02 21:47:06 -  Active-Directory Structure Setup script completed successfully
+2026-04-02 21:47:34 - Groups OU already exists
+2026-04-02 21:47:34 - Group already exists
+2026-04-02 21:47:34 - Group already exists
+2026-04-02 21:47:34 - Group already exists
+2026-04-02 21:47:34 -  Active-Directory Structure Setup script completed successfully

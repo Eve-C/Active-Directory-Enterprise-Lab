@@ -229,7 +229,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ![GPO Policies](screenshots/changed-password-policies-successfully.png)
 
-![GPO Policies](screenshots/3-character-password-unsuccessful.png)
+![GPO Policies](domain-joined-screenshots/password-fail.png)
 
 
 
@@ -250,7 +250,8 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 #Domain-Joined Windows 11 Pro Client -Helpdesk logon to unlock account (Nyasha Wayne)
 #change helpdesk delegation in Domain Controller to unlock the account
-![GPO Policies](domain-joined-screenshots/wayne-helpdesk-tier2-delegation-ovveride.png)
+
+![GPO Policies](domain-joined-screenshots/delegation-ovveride.png)
 
 ![GPO Policies](domain-joined-screenshots/account-unlockeddd.png)
 

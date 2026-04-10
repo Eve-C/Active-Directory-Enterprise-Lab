@@ -251,7 +251,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 #Domain-Joined Windows 11 Pro Client -Helpdesk logon to unlock account (Nyasha Wayne)
 #change helpdesk delegation in Domain Controller to unlock the account
 
-![GPO Policies](domain-joined-screenshots/delegationn.png)
+![GPO Policies](screenshots/delegationn.png)
 
 ![GPO Policies](domain-joined-screenshots/account-unlockeddd.png)
 

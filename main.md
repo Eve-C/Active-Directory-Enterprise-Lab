@@ -50,10 +50,10 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ### Domain Controller Setup
 
-1. Installed **Windows Server 2022** as the Domain Controller (WDC - corp.womenincyber.org).  
+1. Installed **Windows Server 2022** as the Domain Controller **(WDC - corp.womenincyber.org)**.  
 2. Promoted the server to **Active Directory Domain Services (AD DS)**.  
 3. Configured **DNS** for domain resolution.  
-4. Set a **static IP address** for domain stability (e.g., `10.0.2.11`).  
+4. Set a **static IP address** for domain stability (`10.0.2.11`).  
 5. Installed necessary **GPOs** to support password policies and delegation.  
 
 <!-- Screenshot placeholder: DC IP configuration -->
@@ -64,15 +64,13 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 ![DC IP Configuration](screenshots/ad-in-done.png)
 
-![DC IP Configuration](screenshots/corp-admin.png)
+
 
 
 >Note: Selected *Add a new forest*, as this was the first domain controller
 ![DC IP Configuration](screenshots/deployment-ad.png)
 
-
-
-
+![DC IP Configuration](screenshots/corp-admin.png)
 
 
 ---
@@ -84,13 +82,14 @@ This document provides a **step-by-step technical account** of building the **Cy
 3. Configured DNS on the client to point to the DC’s static IP.  
 4. Domain joined the client via **System → Advanced Settings → Computer Name → Change → Domain**.
 5. Client was placed into Computers container by default
-6. Moved client object into **Managed Computers OU → Admin-Workstations**.  
+6. Moved client object into **Managed Computers OU → Admin-Workstations**.
+
+![DC IP Configuration](screenshots/Virtual-Machines.png)
 
 <!-- Screenshot placeholder: Domain join -->
 
 
-<NB: *To install Windows 11 Pro in a virtual machine, the firmware must be set to UEFI because it is a strict system requirement for Secure Boot and TPM 2.0 support.*
-![Domain Join](domain-joined-screenshots/helpdesk-installation.png)
+**NB: *To install Windows 11 Pro in a virtual machine, the firmware must be set to UEFI because it is a strict system requirement for Secure Boot and TPM 2.0 support**
 
 ![Domain Join](domain-joined-screenshots/wWin11-Client-Installation.png)
 
@@ -227,7 +226,6 @@ This document provides a **step-by-step technical account** of building the **Cy
 - GPO applied to all objects
 
 
-![GPO Policies](password-settings-before.png)
 
 ![GPO Policies](screenshots/changed-password-policies-successfully.png)
 
@@ -252,7 +250,7 @@ This document provides a **step-by-step technical account** of building the **Cy
 
 #Domain-Joined Windows 11 Pro Client -Helpdesk logon to unlock account (Nyasha Wayne)
 #change helpdesk delegation in Domain Controller to unlock the account
-![GPO Policies](screenshoots/wayne-helpdesk-tier2-delegation-ovveride.png)
+![GPO Policies](domain-joined-screenshots/wayne-helpdesk-tier2-delegation-ovveride.png)
 
 ![GPO Policies](domain-joined-screenshots/account-unlockeddd.png)
 
